@@ -1,2 +1,10 @@
 /.DS_Store
 /.ipynb_checkpoints/
+/.venv/
+/__pycache__/
+/archive/
+/src/__pycache__/
+/scripts/ia_diffusion_evolution.mp4
+/scripts/graph_metric_experiment.mp4
+/scripts/diff_metric_experiment.mp4
+/img/
