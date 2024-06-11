@@ -37,12 +37,12 @@ whose columns are points along the geodesic path from the first measure to the s
 
 
 def build_geodesic(
-    measures, cost, epsilon=0.1, loss="sqeuc", method="total", steps=10, iters=256
+    measures, cost, epsilon=0.1, loss="sqeuc", method="total", steps=10, iters=2048
 ):
     node_count, measure_count = measures.shape
     assert measure_count == 2
     geodesic_steps = steps
-    barycenters = np.empty((node_count, geodesic_steps))
+    barycenters = np.empty((node_count, geodesic_steps + 1))
     if method == "total":
         print("computing with TOTAL implementation")
         if loss == "sqeuc":
